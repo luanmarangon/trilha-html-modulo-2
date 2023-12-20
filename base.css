@@ -1,6 +1,8 @@
-html, body {
+html,
+body {
     margin: 0;
 }
+
 body {
     background-color: #f1f1f1;
     display: flex;
@@ -11,28 +13,109 @@ body {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
+
 .main {
     display: flex;
     flex-flow: column;
     width: 85%;
 }
+
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: #c8c8c8;
     padding: 10px 20px 0px;
+    font-size: 1.5em;
 }
+
 .header {
-    background-color: rgb(5, 108, 108);
+    /* background-color: rgb(5, 108, 108); */
     min-height: 150px;
 }
+
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
 }
+
 .footer {
-    background-color: rgb(99, 56, 240);
+    /* background-color: rgb(99, 56, 240); */
     min-height: 150px;
+    max-width: 100%;
+    display: flex;
+    padding-left: 2%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.menu a:hover {
+    background-color: #000;
+    color: #fff;
+    border-radius: 30%;
+}
+
+
+.footer div {
+    max-width: 50%;
+}
+
+.header img {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+}
+
+
+.contact {
+    display: grid;
+}
+
+.contact>input {
+    margin-top: 1%;
+
+}
+
+.contact .button-container {
+    display: flex !important;
+    justify-content: space-around;
+    width: 100%;
+    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.button {
+    background-color: yellow;
+    width: 30%;
+    align-items: center;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.33m;
+    font-weight: 700;
 }
